@@ -1,0 +1,76 @@
+.main-view {
+    margin-top: 1rem;
+    a {
+        text-decoration: none;
+        color: #212529;
+        &:hover {
+            text-decoration: none;
+        } 
+    }
+    .property-img {
+        width: 100%;
+    }
+    figure {
+        margin-bottom: 35px;
+    }
+    figcaption {
+        text-align: left;
+        padding: 0.5rem 0.5rem 0.2rem 0;
+        font-size: 1rem;;
+    }
+    p {
+        text-align: left;
+        padding: 0rem 0.5rem 0.5rem 0;
+        font-size: 0.8rem;
+    }
+    .location-drop {
+        color: #2196f3;
+        figure {
+            display: inline;
+            margin-right: 10px;
+        }
+    }
+    .property-status {
+        display: flex;
+        justify-content: space-between;
+        button {
+            min-width: 70px;
+            padding: 0rem 0.5rem;
+            font-size: 0.8rem;
+        }
+        .pending {
+            color: #fff;
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        
+        .sold {
+        color: #212529;
+        background-color: #d39e00;
+        border-color: #c69500;
+        }
+    }
+    .customer-reviews {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 0;
+        figure {
+            margin-bottom: 25px;
+        }
+        .customer-name {
+            margin-left: 10px;
+            line-height: 2;
+        }
+    }
+}
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .main-view  {
+        width: 80%;
+        margin-left: 20%;
+    }
+}
+
+
+    
